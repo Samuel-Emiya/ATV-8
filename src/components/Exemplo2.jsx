@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
 
+
 export function Exemplo2() {
     const [cep, setCep] = useState("")
 
     useEffect(() => {
-        console.log(cep)
+        if (cep.length === 8) {
+            console.log(cep)
+        }
     }, [cep])
 
     return(
