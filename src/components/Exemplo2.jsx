@@ -14,7 +14,7 @@ export function Exemplo2() {
             axios.get(`https://viacep.com.br/ws/${cep}/json/`).then((response => {
                 setLogradouro(response.data.logradouro)
                 setBairro(response.data.bairro)
-                setCidade(response.data.cidade)
+                setCidade(response.data.localidade)
                 setEstado(response.data.estado)
                 setUf(response.data.uf)
             }))
